@@ -12,12 +12,6 @@ class Book extends Model
         'name', 'email', 'password','title','category','author','published_date'
     ];
 
-/*
-    public function create(){
-
-     return View('home');
-    }
-*/
     public function chapters(){
 
      return $this->hasMany(Chapter::class);

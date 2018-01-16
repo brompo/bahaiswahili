@@ -31,10 +31,12 @@
 	<div class="container-fluid">
 		<div class="row fh5co-post-entry single-entry">
 			<article class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
+<!--
 				<figure class="animate-box">
 					<img src="images/single_1.jpg" alt="Image" class="img-responsive">
 				</figure>
 				<span class="fh5co-meta animate-box"><a href="single.html">Travel</a></span>
+			-->
 				<h2 class="fh5co-article-title animate-box"><a href="single.html">{{$book->title}}</a></h2>
 				<span class="fh5co-meta fh5co-date animate-box">{{$book->author}}</span>
 
@@ -46,7 +48,7 @@
 				<div class="col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-left content-article">
 					<div class="row">
 						<div class="col-lg-12 cp-r animate-box">
-							@foreach ($chapter->content as $content)
+							@foreach ($chapter->contents as $content)
 
 							<h2>{{$content->title}}</h2>
 							<p class="{{$content->style}}">{{$content->content}}</p>

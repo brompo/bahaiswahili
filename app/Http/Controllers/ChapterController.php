@@ -27,7 +27,13 @@ class ChapterController extends Controller
 
     }
 
-    public function showchapter(){
-     
+    public function showchapter($chapterid,$id){
+
+     $chapter = Chapter::find($id);
+     //The Chapter ID and ID does not make sense
+
+     return view('book.chapter', compact('chapter'));
+
+
     }
 }

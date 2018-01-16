@@ -17,7 +17,7 @@ class Chapter extends Model
      return $this->belongsTo(Book::class);
     }
 
-    public function content()
+    public function contents()
     {
      return $this->hasMany(Content::class);
     }

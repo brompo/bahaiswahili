@@ -27,6 +27,8 @@ Route::get('/content','BookController@content');
 
 Route::get('/books/{book}/chapters','ChapterController@view');
 
+Route::get('/books/{id}/chapters/{chapterid}','ChapterController@showchapter');
+
 Route::post('/books/{book}/chapters/store','ChapterController@store');
 
 Route::get('/books/{book}/chapters/{content}'.'ContentController@show');
