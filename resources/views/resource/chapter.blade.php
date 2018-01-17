@@ -32,7 +32,7 @@
 		<div class="row fh5co-post-entry single-entry">
 			<article class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
 				<h2 class="fh5co-article-title animate-box"><a href="single.html">{{$chapter->title}}</a></h2>
-				<span class="fh5co-meta fh5co-date animate-box">{{$chapter->book_id}}</span>
+				<span class="fh5co-meta fh5co-date animate-box">{{$chapter->resource_id}}</span>
 
     @foreach ($chapter->contents as $content)
 		 	<div class="row animate-box">

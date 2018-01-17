@@ -59,8 +59,13 @@
     <input type="date" name="publishedDate" value="" class="col-sm-9"><br />
    </div>
    <br />
+			<div class="row">
+    <label for="type" class="col-sm-3">Type: </label>
+    <input type="text" name="type" value="" class="col-sm-9"><br />
+   </div>
+   <br />
 
-   <button type="submit" name="button" class="col-sm-6">Add Book</button>
+   <button type="submit" name="button" class="col-sm-6">Add Resource</button>
 
   </form>
 

@@ -3,24 +3,24 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Book;
+use App\Resource;
 use App\Chapter;
 
 class ChapterController extends Controller
 {
     //
 
-    public function view(Book $book){
+    public function view(Resource $resource){
 
-     return view('book.chapters',compact('book'));
+     return view('resource.chapters',compact('resource'));
 
     }
 
-    public function store(Book $book){
+    public function store(Resource $resource){
 
      Chapter::create([
      'title'=> request('title'),
-     'book_id'=> $book->id
+     'resource_id'=> $resource->id
      ]);
 
      return back();
@@ -32,7 +32,7 @@ class ChapterController extends Controller
      $chapter = Chapter::find($id);
      //The Chapter ID and ID does not make sense
 
-     return view('book.chapter', compact('chapter'));
+     return view('resource.chapter', compact('chapter'));
 
 
     }

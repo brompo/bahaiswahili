@@ -11,24 +11,24 @@
 |
 */
 
-Route::get('/','BookController@index');
+Route::get('/','ResourceController@index');
 
-Route::get('/index.html','BookController@index');
+//Route::get('/index.html','ResourceController@index');
 
-Route::get('/books','BookController@index');
+Route::get('/resources','ResourceController@index');
 
-Route::get('/books/create','BookController@create');
+Route::get('/resources/create','ResourceController@create');
 
-Route::post('/books/store','BookController@store');
+Route::post('/resources/store','ResourceController@store');
 
-Route::get('/books/{book}','BookController@show');
+Route::get('/resources/{resource}','ResourceController@show');
 
-Route::get('/content','BookController@content');
+Route::get('/content','ResourceController@content');
 
-Route::get('/books/{book}/chapters','ChapterController@view');
+Route::get('/resources/{resource}/chapters','ChapterController@view');
 
-Route::get('/books/{id}/chapters/{chapterid}','ChapterController@showchapter');
+Route::get('/resources/{id}/chapters/{chapterid}','ChapterController@showchapter');
 
-Route::post('/books/{book}/chapters/store','ChapterController@store');
+Route::post('/resources/{resource}/chapters/store','ChapterController@store');
 
-Route::get('/books/{book}/chapters/{content}'.'ContentController@show');
+Route::get('/resources/{resource}/chapters/{content}'.'ContentController@show');

@@ -9,6 +9,6 @@ class ContentController extends Controller
 {
     //
     public function view(Chapter $chapter){
-     return ('book.content',compact('chapter'));
+     return ('resource.content',compact('chapter'));
     }
 }

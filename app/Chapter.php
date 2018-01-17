@@ -9,12 +9,12 @@ class Chapter extends Model
     //
 
     protected $fillable = [
-        'title', 'book_id'
+        'title', 'resource_id'
     ];
 
     public function book()
     {
-     return $this->belongsTo(Book::class);
+     return $this->belongsTo(Resource::class);
     }
 
     public function contents()

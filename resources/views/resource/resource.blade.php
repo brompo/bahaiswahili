@@ -15,7 +15,7 @@
 					<li><a href="#"><i class="icon-instagram"></i></a></li>
 				</ul>
 				<div class="col-lg-12 col-md-12 text-center">
-					<h1 id="fh5co-logo"><a href="/books">Maandiko ya Kibaha'i</a></h1>
+					<h1 id="fh5co-logo"><a href="/resources">Maandiko ya Kibaha'i</a></h1>
 				</div>
 
 			</div>
@@ -37,10 +37,10 @@
 				</figure>
 				<span class="fh5co-meta animate-box"><a href="single.html">Travel</a></span>
 			-->
-				<h2 class="fh5co-article-title animate-box"><a href="single.html">{{$book->title}}</a></h2>
-				<span class="fh5co-meta fh5co-date animate-box">{{$book->author}}</span>
+				<h2 class="fh5co-article-title animate-box"><a href="single.html">{{$resource->title}}</a></h2>
+				<span class="fh5co-meta fh5co-date animate-box">{{$resource->author}}</span>
 
-@foreach ($book->chapters as $chapter)
+@foreach ($resource->chapters as $chapter)
 			<div class="row animate-box">
 				<h2>{{$chapter->title}}</h2>
 			</div>

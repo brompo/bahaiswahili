@@ -31,10 +31,10 @@
 	<div class="container-fluid">
 		<div class="row fh5co-post-entry single-entry">
 			<article class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
-				<h2 class="fh5co-article-title animate-box"><a href="single.html">{{$book->title}}</a></h2>
-				<span class="fh5co-meta fh5co-date animate-box">{{$book->author}}</span>
+				<h2 class="fh5co-article-title animate-box"><a href="single.html">{{$resource->title}}</a></h2>
+				<span class="fh5co-meta fh5co-date animate-box">{{$resource->author}}</span>
 
-    @foreach ($book->chapters as $chapter)
+    @foreach ($resource->chapters as $chapter)
 		 	<div class="row animate-box">
 				<a href="chapters/{{$chapter->id}}"><h2> {{$chapter->title}}</h2></a>
 			</div>
