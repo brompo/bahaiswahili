@@ -17,4 +17,9 @@ class Resource extends Model
      return $this->hasMany(Chapter::class);
     }
 
+    public function contents(){
+
+     return $this->hasMany(Content::class);
+    }
+
 }

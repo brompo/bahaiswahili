@@ -23,6 +23,8 @@ Route::post('/resources/store','ResourceController@store');
 
 Route::get('/resources/{resource}','ResourceController@show');
 
+Route::get('/resources/{resource}/contents/create','ContentController@create');
+
 Route::get('/content','ResourceController@content');
 
 Route::get('/resources/{resource}/chapters','ChapterController@view');
