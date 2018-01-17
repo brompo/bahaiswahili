@@ -37,7 +37,7 @@
 				</figure>
 				<span class="fh5co-meta animate-box"><a href="single.html">Travel</a></span>
 			-->
-				<h2 class="fh5co-article-title animate-box"><a href="single.html">{{$resource->title}}</a></h2>
+				<h2 class="fh5co-article-title animate-box"><a href="#">{{$resource->title}}</a></h2>
 				<span class="fh5co-meta fh5co-date animate-box">{{$resource->author}}</span>
 
 @foreach ($resource->chapters as $chapter)
