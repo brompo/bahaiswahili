@@ -22,4 +22,9 @@ class Resource extends Model
      return $this->hasMany(Content::class);
     }
 
+    public function categories(){
+
+     return $this->belongsTo(Category::class);
+    }
+
 }

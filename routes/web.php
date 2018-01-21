@@ -15,7 +15,9 @@
 
 //Get all categoris in the database
 Route::get('/','CategoryController@index');
-//Route::get('/index.html','ResourceController@index');
+
+//Get all resources from a specific category
+Route::get('/categories/{category}','CategoryController@show');
 
 Route::get('/resources','ResourceController@index');
 

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Resource;
+use App\Category;
 
 class ResourceController extends Controller
 {
@@ -16,7 +17,6 @@ class ResourceController extends Controller
      return view('home',compact('resources'));
 
      }
-
 
     public function show($id){
 

@@ -31,7 +31,7 @@ $factory->define(App\Resource::class, function (Faker $faker) {
        // 'name' => $faker->name,
         'title' => "Ridvan 2017",
         'author'=> "Nyumba ya Haki ya Ulimwengu",
-        'category'=>str_random(10),
+        'category_id'=> 1,
         'type' => "nyaraka",
         /*
         'email' => $faker->unique()->safeEmail,

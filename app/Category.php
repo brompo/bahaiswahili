@@ -7,4 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class Category extends Model
 {
     //
+
+    public function resources(){
+
+     return $this->hasMany(Resource::class);
+    }
 }

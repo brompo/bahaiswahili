@@ -18,7 +18,7 @@ class CreateResourcesTable extends Migration
          $table->string('title');
          $table->string('author')->nullable();
          $table->string('image')->nullable();
-         $table->string('category');
+         $table->integer('category_id');
          $table->date('published_date')->nullable();
          $table->string('type');
          $table->timestamps();

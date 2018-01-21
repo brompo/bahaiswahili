@@ -17,4 +17,11 @@ class CategoryController extends Controller
      return view('home',compact('categories'));
 
     }
+
+    public function show($id)
+    {
+     $category = Category::find($id);
+     return view('category',compact('category'));
+
+    }
 }
