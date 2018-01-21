@@ -40,3 +40,11 @@ $factory->define(App\Resource::class, function (Faker $faker) {
         */
     ];
 });
+
+$factory->define(App\Category::class, function (Faker $faker) {
+    //static $password;
+
+    return [
+        'title' => str_random(50),
+    ];
+});
