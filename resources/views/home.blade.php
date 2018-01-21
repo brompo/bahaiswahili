@@ -32,14 +32,14 @@
 	<div class="container-fluid">
 		<div class="row fh5co-post-entry">
 
-@foreach ($resources as $resource)
+@foreach ($categories as $category)
 			<article class="col-lg-3 col-md-3 col-sm-3 col-xs-6 col-xxs-12 animate-box">
 				<figure>
-					<a href="/resources/{{$resource->id}}"><img src="images/pic_1.jpg" alt="Image" class="img-responsive"></a>
+					<a href="/categories/{{$category->id}}"><img src="images/pic_1.jpg" alt="Image" class="img-responsive"></a>
 				</figure>
-				<span class="fh5co-meta"><a href="#">{{$resource->category}}</a></span>
-				<h2 class="fh5co-article-title"><a href="/resources/{{$resource->id}}">{{$resource->title}}</a></h2>
-				<span class="fh5co-meta fh5co-date">{{$resource->author}}</span>
+				<span class="fh5co-meta"><a href="#">{{$category->category}}</a></span>
+				<h2 class="fh5co-article-title"><a href="/resources/{{$category->id}}">{{$category->title}}</a></h2>
+				<span class="fh5co-meta fh5co-date">{{$category->author}}</span>
 			</article>
 
 @endforeach

@@ -45,6 +45,6 @@ $factory->define(App\Category::class, function (Faker $faker) {
     //static $password;
 
     return [
-        'title' => str_random(50),
+        'title' => str_random(10),
     ];
 });
